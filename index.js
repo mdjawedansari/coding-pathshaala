@@ -5,14 +5,14 @@ import morgan from 'morgan';
 import cookieParser from 'cookie-parser';
 import { v2 as cloudinary } from 'cloudinary';
 import Razorpay from 'razorpay';
-import errorMiddleware from './middlewares/error.middleware.js';
-import connectDB from './config/db.js';
+import errorMiddleware from './src/middlewares/error.middleware.js';
+import connectDB from './src/config/db.js';
 
 // Import all routes
-import userRoutes from './routes/user.routes.js';
-import courseRoutes from './routes/course.routes.js';
-import paymentRoutes from './routes/payment.routes.js';
-import miscRoutes from './routes/miscellaneous.routes.js';
+import userRoutes from './src/routes/user.routes.js';
+import courseRoutes from './src/routes/course.routes.js';
+import paymentRoutes from './src/routes/payment.routes.js';
+import miscRoutes from './src/routes/miscellaneous.routes.js';
 
 // Initialize environment variables
 config();
